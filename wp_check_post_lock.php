@@ -1,6 +1,7 @@
 <?php
 
-// add function (content-single.php)
+// add function (content-single.php or header.php, whatever)
+// securityrisk? hmm i dont think so? 
 
 function wp_check_post_lock( $post_id ) {
     if ( !$post = get_post( $post_id ) )
@@ -22,10 +23,11 @@ function wp_check_post_lock( $post_id ) {
 
 // place in body (content-single.php)
 
-if (!(wp_check_post_lock())) {
-        echo "This post is currently being edited.";
-} else {
-       // echo "post not locked by wpuser";
-}
+if (wp_check_post_lock()) {
+        echo "Post is being edited by user";
+} //else {
+    // prolly nothing here, skip this else.
+//}
+
 
 ?>
