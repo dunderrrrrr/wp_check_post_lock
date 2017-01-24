@@ -1,0 +1,1 @@
+If you need to tell your visitors that the post they are browsing is currently being edited by wordpress user. 
