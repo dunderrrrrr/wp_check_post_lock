@@ -1,3 +1,4 @@
+<?php
 
 // add function (content-single.php)
 
@@ -24,5 +25,7 @@ function wp_check_post_lock( $post_id ) {
 if (!(wp_check_post_lock())) {
         echo "This post is currently being edited.";
 } else {
-       // echo "not locked";
+       // echo "post not locked by wpuser";
 }
+
+?>
