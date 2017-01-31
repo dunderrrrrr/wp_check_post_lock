@@ -23,7 +23,7 @@ function wp_check_post_lock( $post_id ) {
 
 // place in body (content-single.php)
 
-if (wp_check_post_lock()) {
+if (wp_check_post_lock($post_id)) {
         echo "Post is being edited by user";
 } //else {
     // prolly nothing here, skip this else.
