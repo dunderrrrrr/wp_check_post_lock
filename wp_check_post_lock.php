@@ -1,7 +1,7 @@
 <?php
 
 // add function (content-single.php or header.php, whatever)
-// securityrisk? hmm i dont think so? 
+// https://wordpress.org/support/topic/wp_check_post_lock-in-content-single-php/
 
 function wp_check_post_lock( $post_id ) {
     if ( !$post = get_post( $post_id ) )
